@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp modelsim/TurboFMpro_v.sdo ./
+
+vlog -vopt +acc -O5 -incr tb.v modelsim/TurboFMpro.vo max_atoms.v
+
